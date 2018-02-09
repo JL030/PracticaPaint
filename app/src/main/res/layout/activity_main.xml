@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="databinding.android.vogella.com.paint.Vista.MainActivity">
+
+    <view
+        android:id="@+id/view2"
+        style="@style/Animation.AppCompat.Dialog"
+        class="databinding.android.vogella.com.paint.Modelo.VistaPintada"
+        id="@+id/view"
+        android:layout_width="387dp"
+        android:layout_height="380dp"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/author" />
+
+    <Button
+        android:id="@+id/changeColor"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Rojo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/circle"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/circle"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="63dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/square"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <Button
+        android:id="@+id/square"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/undo" />
+
+    <Button
+        android:id="@+id/undo"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="91dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Undo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <Button
+        android:id="@+id/Line"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Line"
+        app:layout_constraintBottom_toTopOf="@+id/circle"
+        app:layout_constraintEnd_toStartOf="@+id/deleteAll"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/deleteAll"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="16dp"
+        android:text="Delete All"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/purple"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Purple"
+        app:layout_constraintBottom_toTopOf="@+id/changeColor"
+        app:layout_constraintEnd_toStartOf="@+id/Line"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="298dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Javier López Girela"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
